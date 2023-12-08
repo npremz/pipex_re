@@ -6,7 +6,7 @@
 /*   By: npremont <npremont@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 11:03:28 by npremont          #+#    #+#             */
-/*   Updated: 2023/12/08 10:51:15 by npremont         ###   ########.fr       */
+/*   Updated: 2023/12/08 14:50:55 by npremont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,5 @@ int	main(int argc, char **argv, char **envp)
 	}
 	else
 		ft_printf("Error: Wrong input format\n");
-	system("leaks pipex");
 	return (0);
 }
