@@ -6,7 +6,7 @@
 /*   By: npremont <npremont@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 11:03:28 by npremont          #+#    #+#             */
-/*   Updated: 2023/12/10 09:36:04 by npremont         ###   ########.fr       */
+/*   Updated: 2023/12/10 14:58:16 by npremont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	ft_parent(char **argv, char **envp, int *fd)
 {
 	int	outfile;
 
-	outfile = open(argv[4], O_WRONLY | O_CREAT, 0777);
+	outfile = open(argv[4], O_RDWR | O_CREAT | O_TRUNC, 0777);
 	if (outfile == -1)
 	{
 		perror("Open file failed");
